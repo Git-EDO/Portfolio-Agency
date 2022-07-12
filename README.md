@@ -1,10 +1,6 @@
 # Portfolio - [Agency](https://git-edo.github.io/Portfolio-Agency/)
 
-## My third layout project
-
-### I've used the next approaches:
-- Flexbox
-- Sticky nav menu
+- FULLY-RESPONSIVE 320 - 1400+
+- Smooth-scrolling animation
+- SVG icons animation
 - JS slider
-- html basics
-- css basics
