@@ -22,12 +22,12 @@
                         SQWD
                     </div>
                     <div class="nav__menu">
-                            <a href="#weare">about</a>
-                            <a href="#services">services</a>
-                            <a href="#blog">blog</a>
-                            <a href="#team">team</a>
-                            <a href="#faq">faq</a>
-                            <a href="#contacts">contacts</a>
+                            <a id="about" href="#">about</a>
+                            <a id="services" href="#">services</a>
+                            <a id="blog" href="#">blog</a>
+                            <a id="team" href="#">team</a>
+                            <a id="faq" href="#">faq</a>
+                            <a id="contacts" href="#">contacts</a>
                     </div>
                 </nav>
                 <div class="header__title">
@@ -44,7 +44,7 @@
             </div>
         </header>
         <section class="weare">
-            <div id="weare" class="weare__container container">
+            <div class="weare__container container">
                 <div class="weare__row">
                     <div class="greenblock"></div>
                     <div class="weare__column weare__column1">
@@ -80,7 +80,7 @@
                 </div>
             </div>
         </section>
-        <section id="services" class="our-services">
+        <section class="our-services">
             <div class="our-services__container container">
                 <div class="our-services__title section-title">
                     Our Services
@@ -134,32 +134,31 @@
                 </div>
             </div>
         </section>
-        <section id="blog" class="works">
+        <section class="works">
             <div class="works__container container">
                 <div class="works__row">
-                    <div class="works__column">
                         <div class="works__header">
                             <div class="works__title section-title">
                                 Latest Works
                             </div>
                             <div class="works__nav">
                                 <div class="works__menu">
-                                    <a href="#">all</a>
-                                    <a href="#">web design</a>
-                                    <a href="#">branding</a>
-                                    <a href="#">photography</a>
-                                    <a href="#">illustration</a> 
+                                    <a id="all" href="#">all</a>
+                                    <a id="design" href="#">web design</a>
+                                    <a id="branding" href="#">branding</a>
+                                    <a id="photo" href="#">photography</a>
+                                    <a id="illu" href="#">illustration</a> 
                                 </div>
                             </div>
                         </div>
-                        <div class="works__item">
+                        <div class="works__item illu-item">
                             <div class="works__item-title">a kitten's<br>life</div>
                             <div class="works__item__inner-container">
                                 <div class="works__item-picture">
                                     <img src="./img/latest works/picture2.jpg" alt="picture">
                                 </div>
                                 <div class="works__item-subtitle">
-                                    Photography
+                                    Illustrations
                                 </div>
                                 <div class="works__item-text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -169,14 +168,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="works__item">
+                        <div class="works__item brand-item">
                             <div class="works__item-title">APPLE's<br>LOST MAGIC</div>
                             <div class="works__item__inner-container">
                                 <div class="works__item-picture">
                                     <img src="./img/latest works/picture4.jpg" alt="picture">
                                 </div>
                                 <div class="works__item-subtitle">
-                                    Photography
+                                    Branding
                                 </div>
                                 <div class="works__item-text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -186,9 +185,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="works__column right-orientation">
-                        <div class="works__item">
+
+                        <div class="works__item photo-item right-ori">
                             <div class="works__item-title">100 YEARS<br>PHOTOGRAPHY</div>
                             <div class="works__item__inner-container">
                                 <div class="works__item-picture">
@@ -205,14 +203,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="works__item">
+                        <div class="works__item design-item right-ori">
                             <div class="works__item-title">GROOVEMADE<br>PRODUCTS FOR MAC</div>
                             <div class="works__item__inner-container">
                                 <div class="works__item-picture">
                                     <img src="./img/latest works/picture3.jpg" alt="picture">
                                 </div>
                                 <div class="works__item-subtitle">
-                                    Photography
+                                    Design
                                 </div>
                                 <div class="works__item-text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -221,12 +219,11 @@
                                     <a href="#">read more</a>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="team" class="team">
+        <section class="team">
             <div class="team__container container">
                 <div class="team__section-title section-title">
                     The Team
@@ -299,7 +296,9 @@
                 <div class="feedback__row">
                     <div class="feedback__column feedback__arrow">
                         <div class="arrow-left">
-                            <img src="./img/feedback/left-arrow.png" alt="symbol">
+                            <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.4375 3.125C23.4375 2.7106 23.2729 2.31317 22.9799 2.02015C22.6868 1.72712 22.2894 1.5625 21.875 1.5625H3.125C2.7106 1.5625 2.31317 1.72712 2.02015 2.02015C1.72712 2.31317 1.5625 2.7106 1.5625 3.125V21.875C1.5625 22.2894 1.72712 22.6868 2.02015 22.9799C2.31317 23.2729 2.7106 23.4375 3.125 23.4375H21.875C22.2894 23.4375 22.6868 23.2729 22.9799 22.9799C23.2729 22.6868 23.4375 22.2894 23.4375 21.875V3.125ZM0 3.125C0 2.2962 0.32924 1.50134 0.915291 0.915291C1.50134 0.32924 2.2962 0 3.125 0L21.875 0C22.7038 0 23.4987 0.32924 24.0847 0.915291C24.6708 1.50134 25 2.2962 25 3.125V21.875C25 22.7038 24.6708 23.4987 24.0847 24.0847C23.4987 24.6708 22.7038 25 21.875 25H3.125C2.2962 25 1.50134 24.6708 0.915291 24.0847C0.32924 23.4987 0 22.7038 0 21.875V3.125ZM17.9688 11.7188C18.176 11.7188 18.3747 11.8011 18.5212 11.9476C18.6677 12.0941 18.75 12.2928 18.75 12.5C18.75 12.7072 18.6677 12.9059 18.5212 13.0524C18.3747 13.1989 18.176 13.2812 17.9688 13.2812H8.91719L12.2719 16.6344C12.3445 16.707 12.4021 16.7932 12.4414 16.8882C12.4808 16.9831 12.501 17.0848 12.501 17.1875C12.501 17.2902 12.4808 17.3919 12.4414 17.4868C12.4021 17.5818 12.3445 17.668 12.2719 17.7406C12.1992 17.8133 12.113 17.8709 12.0181 17.9102C11.9232 17.9495 11.8215 17.9697 11.7188 17.9697C11.616 17.9697 11.5143 17.9495 11.4194 17.9102C11.3245 17.8709 11.2383 17.8133 11.1656 17.7406L6.47812 13.0531C6.40537 12.9806 6.34765 12.8943 6.30826 12.7994C6.26888 12.7045 6.2486 12.6028 6.2486 12.5C6.2486 12.3972 6.26888 12.2955 6.30826 12.2006C6.34765 12.1057 6.40537 12.0194 6.47812 11.9469L11.1656 7.25937C11.3123 7.11268 11.5113 7.03026 11.7188 7.03026C11.9262 7.03026 12.1252 7.11268 12.2719 7.25937C12.4186 7.40607 12.501 7.60504 12.501 7.8125C12.501 8.01996 12.4186 8.21893 12.2719 8.36563L8.91719 11.7188H17.9688Z" fill="#B8B8B8"/>
+                                </svg>
                         </div>
                     </div>
                     <div class="feedback__column feedback__column-items">
@@ -367,13 +366,16 @@
                     </div>
                     <div class="feedback__column feedback__arrow">
                         <div class="arrow-right">
-                            <img src="./img/feedback/right-arrow.png" alt="symbol">
+                            <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M23.4375 3.125C23.4375 2.7106 23.2729 2.31317 22.9799 2.02015C22.6868 1.72712 22.2894 1.5625 21.875 1.5625H3.125C2.7106 1.5625 2.31317 1.72712 2.02015 2.02015C1.72712 2.31317 1.5625 2.7106 1.5625 3.125V21.875C1.5625 22.2894 1.72712 22.6868 2.02015 22.9799C2.31317 23.2729 2.7106 23.4375 3.125 23.4375H21.875C22.2894 23.4375 22.6868 23.2729 22.9799 22.9799C23.2729 22.6868 23.4375 22.2894 23.4375 21.875V3.125ZM0 3.125C0 2.2962 0.32924 1.50134 0.915291 0.915291C1.50134 0.32924 2.2962 0 3.125 0L21.875 0C22.7038 0 23.4987 0.32924 24.0847 0.915291C24.6708 1.50134 25 2.2962 25 3.125V21.875C25 22.7038 24.6708 23.4987 24.0847 24.0847C23.4987 24.6708 22.7038 25 21.875 25H3.125C2.2962 25 1.50134 24.6708 0.915291 24.0847C0.32924 23.4987 0 22.7038 0 21.875V3.125ZM7.03125 11.7188C6.82405 11.7188 6.62534 11.8011 6.47882 11.9476C6.33231 12.0941 6.25 12.2928 6.25 12.5C6.25 12.7072 6.33231 12.9059 6.47882 13.0524C6.62534 13.1989 6.82405 13.2812 7.03125 13.2812H16.0828L12.7281 16.6344C12.6555 16.707 12.5979 16.7932 12.5586 16.8882C12.5192 16.9831 12.499 17.0848 12.499 17.1875C12.499 17.2902 12.5192 17.3919 12.5586 17.4868C12.5979 17.5818 12.6555 17.668 12.7281 17.7406C12.8008 17.8133 12.887 17.8709 12.9819 17.9102C13.0768 17.9495 13.1785 17.9697 13.2812 17.9697C13.384 17.9697 13.4857 17.9495 13.5806 17.9102C13.6755 17.8709 13.7617 17.8133 13.8344 17.7406L18.5219 13.0531C18.5946 12.9806 18.6524 12.8943 18.6917 12.7994C18.7311 12.7045 18.7514 12.6028 18.7514 12.5C18.7514 12.3972 18.7311 12.2955 18.6917 12.2006C18.6524 12.1057 18.5946 12.0194 18.5219 11.9469L13.8344 7.25937C13.7617 7.18674 13.6755 7.12912 13.5806 7.08981C13.4857 7.0505 13.384 7.03026 13.2812 7.03026C13.1785 7.03026 13.0768 7.0505 12.9819 7.08981C12.887 7.12912 12.8008 7.18674 12.7281 7.25937C12.6555 7.33201 12.5979 7.41825 12.5586 7.51315C12.5192 7.60806 12.499 7.70978 12.499 7.8125C12.499 7.91522 12.5192 8.01694 12.5586 8.11185C12.5979 8.20675 12.6555 8.29299 12.7281 8.36563L16.0828 11.7188H7.03125Z" fill="#B8B8B8"/>
+                                </svg>
+                                
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="faq" class="faq">
+        <section class="faq">
             <div class="faq__container container">
                 <div class="faq__section-title section-title">
                     Your questions
@@ -424,7 +426,7 @@
                 </div>
             </div>
         </section>
-        <section id="contacts" class="contacts">
+        <section class="contacts">
             <div class="contacts__body">
                 <div class="contacts__row">
                     <div class="contacts__column contacts__column1">
@@ -439,7 +441,7 @@
                                 Amazing. Tell us about your project!
                             </div>
                             <div class="contacts__item-arrow">
-                                <img src="./img/contacts/arrow.png" alt="icon">
+                                <img src="./img/feedback/right-arrow.svg" alt="icon">
                             </div>
                         </div>
                     </div>
@@ -470,13 +472,13 @@
                 </div>
                 <div class="footer__body-links">
                     <div class="footer__body-link">
-                        <a href="#"><img src="./img/footer/icon1.png" alt="icon"></a>
+                        <a href="http://facebook.com/" target="_blank"><img src="./img/footer/icon1.svg" alt="icon"></a>
                     </div>
                     <div class="footer__body-link">
-                        <a href="#"><img src="./img/footer/icon2.png" alt="icon"></a>
+                        <a href="http://twitter.com/" target="_blank"><img src="./img/footer/icon2.svg" alt="icon"></a>
                     </div>
                     <div class="footer__body-link">
-                        <a href="#"><img src="./img/footer/icon3.png" alt="icon"></a>
+                        <a href="http://pinterest.com/" target="_blank"><img src="./img/footer/icon3.svg" alt="icon"></a>
                     </div>
                 </div>
             </div>
