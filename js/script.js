@@ -108,3 +108,25 @@ allFilter.addEventListener('click', function(e){
     illu.style.display = 'flex';
     design.style.display = 'flex';
 })
+
+// Управление кнопкой возврата
+
+let windowScrollBackButton = document.querySelector('.scroll-back');
+
+function positionCheck() {
+    let windowScrollTop = window.pageYOffset;
+    if (windowScrollTop > 600) {
+        windowScrollBackButton.classList.add('active');
+    } else {
+        windowScrollBackButton.classList.remove('active');
+    }
+};
+
+setInterval(positionCheck, 1000);
+
+let headerScroll = document.getElementById('headerScroll');
+
+headerScroll.addEventListener('click', function() {
+    const header = document.querySelector('header');
+    header.scrollIntoView({block: "start", behavior: "smooth"});
+});
